@@ -74,7 +74,7 @@ app.post('/api/mark-attendance', async (req: any, res: any) => {
 
     const otpAge = Math.abs((new Date().getTime() - new Date(session.otpgeneratedat).getTime()))/1000.0; // in seconds
     console.log('OTP Age in seconds:', otpAge);
-    if (otpAge > 500) {  
+    if (otpAge > 30) {  
         return res.status(400).json({ message: "OTP expired" });
     }
 

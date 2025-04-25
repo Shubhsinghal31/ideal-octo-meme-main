@@ -32,7 +32,7 @@ const MarkAttendance = () => {
 
     setLoading(true);
     try {
-      const response = await fetch("https://ideal-octo-meme.onrender.com/api/mark-attendance", {
+      const response = await fetch("https://ideal-octo-meme-main.onrender.com/api/mark-attendance", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
